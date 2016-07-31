@@ -1,0 +1,24 @@
+$def with(templates, content)
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>snipyt</title>
+		<link rel="stylesheet" type="text/css" href="/static/style.css" />
+		<link href='http://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<div id="site-content">
+			<div id="header">
+				<a href="/"><h1>snipyt</h1></a>
+			</div>
+			
+			<div id="content">
+				$:content
+			</div>
+		</div>
+		
+		<div id="footer">
+			<p>Created by <a href="http://pmurdoch.com">Pete Murdoch</a>. Source available on <a href="http://github.com/lostrootpass/snipyt">github</a>.</p>
+		</div>
+	</body>
+</html>

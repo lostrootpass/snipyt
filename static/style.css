@@ -1,0 +1,72 @@
+body
+{
+	font-family: 'Oxygen', sans-serif;
+}
+
+.error a
+{
+	text-decoration: none;
+	font-weight: bold;
+	color: black;
+}
+
+.error a:hover
+{
+	text-decoration: underline;
+}
+
+#header a
+{
+	text-decoration: none;
+	color: black;
+}
+
+#site-content
+{
+	width: 70%;
+	max-width: 1000px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#footer
+{
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	width: 50%;
+	
+	color: lightgrey;
+	-webkit-transition: color 1s;
+	transition: color 1s;
+}
+
+#footer:hover
+{
+	color: grey;
+}
+
+#footer p
+{
+	font-size: 0.75em;
+}
+
+#footer:hover a
+{
+	color: black;
+}
+
+#footer a
+{
+	-webkit-transition: color 1s;
+	transition: color 1s;
+	text-decoration: none;
+	color: lightgrey;
+}
+
+#footer a:hover
+{
+	text-decoration: underline;
+	color: black;
+}

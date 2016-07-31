@@ -1,0 +1,36 @@
+$def with(templates)
+
+<div id="intro">
+<p>snipyt ("snippet") is a tool to allow you to quickly link to a specific segment of a YouTube video.</p>
+</div>
+
+
+<script type="text/javascript">
+function redirect()
+{
+	var newUrl = "/" + document.getElementById("videoId").value +
+	"/" + document.getElementById("start").value + 
+	"," + document.getElementById("end").value +
+	"/" + (document.getElementById("loop").checked ? "1" : "0") + "/";
+	
+	window.location.href = newUrl;
+	
+	return false;
+}
+</script>
+
+<div id="form" action"#" method="get" onsubmit="return redirect()">
+<form>
+<input type="textbox" id="videoId" size="16" placeholder="Video ID" required="required" autofocus="true" /><br />
+<label for="start">From</label>
+<input type="number" min="0" max="9999" value="0" id="start">
+<label for="end">to</label>
+<input type="number" min="0" max="9999" value="0" id="end">
+<span>seconds</span>
+<br />
+<input type="checkbox" name="Loop" id="loop">
+<label for="loop">Loop automatically?</label>
+<br /><br />
+<input type="submit" id="submitButton" value="snipyt">
+</form>
+</div>
